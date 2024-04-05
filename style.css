@@ -1,0 +1,164 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+  --border: 1px solid #ffffff2b;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #131313;
+  color: #ffffff;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 20px 32px;
+}
+
+header {
+  display: flex;
+  padding: 20px 0;
+  border-bottom: var(--border);
+}
+
+header > svg {
+  margin: auto 15px;
+}
+
+header h1 {
+  font-weight: 700;
+  color: #f48f56;
+}
+
+form,
+table {
+  margin: 30px auto;
+}
+
+section h2 {
+  font: 700 18px/140% "Poppins", sans-serif;
+  color: #f2f2f7;
+  padding-bottom: 16px;
+}
+
+fieldset {
+  padding: 20px 20px 32px 20px;
+  border: none;
+  border-bottom: var(--border);
+  border-radius: 5px;
+  display: flex;
+  gap: 12px;
+}
+
+fieldset legend {
+  padding-bottom: 12px;
+  font-size: 16px;
+}
+
+input {
+  all: unset;
+}
+
+.input-wrapper {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: var(--border);
+  border-radius: 10px;
+  padding: 10px 14px;
+  font: 400 16px/150% "Poppins", sans-serif;
+  color: #d5d5dd;
+}
+
+input::placeholder {
+  color: #ccc;
+}
+
+button#enrollment {
+  width: fit-content;
+  border-radius: 8px;
+  border: none;
+  background-color: #f48f56;
+  color: #2e2e2e;
+  font: 700 16px/24px "Poppins", sans-serif;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  line-height: 5px;
+}
+
+button#enrollment:hover {
+  background-color: #0aa0dd;
+  border: none;
+  color: #ffffff;
+  font-weight: 700;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.list-title {
+  padding: 20px 0;
+}
+
+.list-title > div {
+  border: var(--border);
+  border-radius: 10px;
+  padding-left: 15px;
+}
+
+table {
+  border-collapse: collapse;
+}
+
+table > thead {
+  font-size: 16px;
+  line-height: 16px;
+}
+
+table thead tr th:last-child {
+  padding-left: 18px;
+}
+
+thead th,
+tbody td {
+  padding: 12px 16px;
+}
+
+tbody td {
+  font-size: 15px;
+  line-height: 14px;
+  color: #d5d5dd;
+}
+
+tbody td strong {
+  color: #ccc;
+  font-size: 15px;
+  line-height: 16px;
+  font-weight: 600;
+}
+
+tbody td small {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+tbody td button {
+  all: unset;
+  color: #0aa0dd;
+}
+
+tbody td button:hover {
+  text-decoration: underline;
+  color: rgb(49, 247, 92);
+}
